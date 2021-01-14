@@ -4,12 +4,12 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const routes = require("../routes/index.js");
 const cors = require("cors");
-//--------- Autenticación
+//--------- auth
 const passport = require("passport");
 const session = require("express-session");
 const LocalStrategy = require("passport-local").Strategy;
 
-const { User } = require("./db.js"); //Traer usuario de la base de datos
+const { User } = require("./db.js"); //get user from db
 
 const server = express();
 
