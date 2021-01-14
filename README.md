@@ -14,10 +14,10 @@ DB_PASSWORD={Your postgreSQL password}
 DB_HOST=localhost
 
 ```
-- Run npm install on api folder
-- Run npm run dev on api folder (yo must see ¨listening at 3001¨) and let it running
-- Run npm install on client folder
-- Run npm start on client folder
+- Run `npm install` on api folder
+- Run `npm run dev` on api folder (yo must see `listening at 3001`) and let it running
+- Run `npm install` on client folder
+- Run `npm start` on client folder
 
 The app doesn't have any users created by default, you'll have to register to use the app
 
