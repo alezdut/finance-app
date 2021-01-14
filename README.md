@@ -6,12 +6,11 @@ If you want to see the page for yourself, you'll need to do the following:
 
 - Clone the repository
 - Install [PostgreSQL](https://www.postgresql.org/) on your computer and create a database called `financeapp`.
-- Create a `.env` file in in the `api` folder with the following contents:
+- Modify the `.env` file located in in the `api` folder with the following contents:
 
 ```
 DB_USER={Your postgreSQL user}
 DB_PASSWORD={Your postgreSQL password}
-DB_HOST=localhost
 
 ```
 - Run `npm install` on api folder
