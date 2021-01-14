@@ -25,7 +25,6 @@ export default function Login() {
     const [repass, setRepass] = useState('');
     const [error, setError] = useState(false);
     const [error2, setError2] = useState(false);
-    const [userId, setUserId] = useState();
 
     useEffect(() => {
         if (password === repass && password.length > 7 && name.length > 0 && email.length > 0) {
@@ -86,7 +85,6 @@ export default function Login() {
                         title: 'Inicio de sesion',
                         text: 'Ya puedes cargar nuevas operaciones',
                     })
-                    //window.location.reload();
                 })
             },
             error: function (xhr, status) {

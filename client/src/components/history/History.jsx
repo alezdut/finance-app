@@ -50,9 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-
-
-export default function History(props) {
+export default function History() {
     const classes = useStyles();
     const [operations, setOperations] = useState([]);
     const [allOperations, setAllOperations] = useState([]);
@@ -65,11 +63,12 @@ export default function History(props) {
     const [dateChange, setDateChange] = useState();
     const [conceptChange, setConceptChange] = useState();
     const [amountChange, setAmountChange] = useState();
-
+    //the array used to filter by category
     var arr = [];
+    //session id
     var id = sessionStorage.getItem('id');
+    //open dialog
     const [open, setOpen] = useState(false);
-    var objFecha = new Date();
 
     const handleClose = () => {
         setOpen(false);
@@ -108,7 +107,6 @@ export default function History(props) {
     useEffect(() => {
 
     }, [operations, operation])
-
 
     const handleFilterCategory = (e) => {
         e.preventDefault();
@@ -192,10 +190,7 @@ export default function History(props) {
                     </Typography>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="age-native-simple">Categoria</InputLabel>
-                    <Select
-                        native
-                        onChange={handleFilterCategory}
-                    >
+                    <Select native onChange={handleFilterCategory}>
                         <option aria-label="None" value="all" />
                         <option value='all'>Todas</option>
                         <option value='Alimentación'>Alimentación</option>
@@ -215,15 +210,12 @@ export default function History(props) {
             </div>
             <CardActionArea>
                 <CardContent>
-
-
                     <Divider />
                     <div className="List__Main">
                         <List component="nav" aria-label="main mailbox folders" >
                             <div className="List__container">
                                 {operations && operations.slice(-10, operations.length).map((e, i) => {
-
-                                    return <ListItem button alignItems='flex-start' onClick={handleItemClick}>
+                                    return <ListItem button alignItems='flex-start' key={e.id} onClick={handleItemClick}>
                                         <ListItemIcon>
                                             {e.type === "add" ? <TrendingUpIcon color="primary" /> : <TrendingDownIcon color="secondary" />}
                                         </ListItemIcon>
@@ -234,7 +226,6 @@ export default function History(props) {
                                             <p id={e.id}>{e.type === 'add' ? '$' + e.amount : '-$' + e.amount}</p>
                                         </div>
                                     </ListItem>
-
                                 })}
                             </div>
                         </List>

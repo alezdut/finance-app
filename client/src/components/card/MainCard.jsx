@@ -19,7 +19,6 @@ import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import NativeSelect from '@material-ui/core/NativeSelect';
 import "./MainCard.css"
 
 const useStyles = makeStyles((theme) => ({
@@ -201,7 +200,6 @@ export default function MainCard(props) {
                                     id="date"
                                     label="Fecha"
                                     type="date"
-                                    defaultValue={objFecha.toLocaleDateString().slice(0, 9)}
                                     className={classes.textField}
                                     onChange={handleDateChange}
                                     InputLabelProps={{
