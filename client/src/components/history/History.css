@@ -1,0 +1,33 @@
+.List__container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.List__Main{
+    display: flex;
+    justify-content: space-between;
+}
+.List__Item{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+}
+.List__Item p{
+    width: 25%;
+}
+.Title__History{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.Form__Modify__Operation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5px;
+}

@@ -24,6 +24,16 @@ module.exports = (sequelize) => {
             allowNull: validations.allowNull,
             validate: validations.intType,
         },
+        category: {
+            type: DataTypes.STRING,
+            allowNull: validations.allowNull,
+            validate: validations.strType,
+        },
+        date: {
+            type: DataTypes.STRING,
+            allowNull: validations.allowNull,
+            validate: validations.strType,
+        },
         type: {
             type: DataTypes.STRING,
             allowNull: validations.allowNull,

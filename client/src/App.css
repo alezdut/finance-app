@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.MainCard__Card{
+  margin-top: 5vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

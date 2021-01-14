@@ -1,0 +1,23 @@
+.Login__main{
+    flex-grow: inherit;
+    width: 20vw;
+}
+@media (max-width: 965px) {
+    .Login__main{
+        height: 50vh;
+        width: 90vw;
+    }
+}
+.Login__text{
+    display: flex;
+    justify-content: flex-end;
+    color:rgb(121, 120, 120);
+    cursor: pointer;
+    margin-top: 1vh;
+}
+.Button__Form{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    margin-top: 1vh;
+}
