@@ -19,14 +19,14 @@ The app doesn't have any users created by default, you'll have to register to us
 
 # Previews
 
-### Home page:
+### Register:
 
 ![alt text](./images/1.jpg "register")
 
-### Shopping Cart:
+### Balance:
 
 ![alt text](./images/2.jpg "balance")
 
-### Checkout:
+### Add operation:
 
 ![alt text](./images/3.jpg "add operation")
