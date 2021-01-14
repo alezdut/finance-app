@@ -16,3 +16,17 @@ DB_HOST=localhost
 ```
 
 The app doesn't have any users created by default, you'll have to register to use the app
+
+# Previews
+
+### Home page:
+
+![alt text](./images/1.jpg "register")
+
+### Shopping Cart:
+
+![alt text](./images/2.jpg "balance")
+
+### Checkout:
+
+![alt text](./images/3.jpg "add operation")
